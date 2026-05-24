@@ -26,10 +26,6 @@
           {{ link.label }}
         </a>
 
-        <a href="#contact" class="btn btn-outline text-xs" @click.prevent="scrollTo('contact')">
-          <AppIcon name="mail" class="w-4 h-4" />
-          Contact
-        </a>
       </div>
 
       <button
