@@ -1,8 +1,8 @@
 <template>
-  <div class="card p-6">
-    <div class="flex justify-center mb-6">
+  <div class="card p-5 sm:p-6">
+    <div class="mb-6 flex justify-center">
       <div
-        class="avatar-ring w-[210px] h-[210px] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+        class="avatar-ring flex h-[180px] w-[180px] cursor-pointer items-center justify-center transition-transform duration-300 hover:scale-[1.02] sm:h-[210px] sm:w-[210px]"
         @click="isModalOpen = true"
         title="View profile photo"
       >
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="text-center space-y-3">
+    <div class="space-y-3 text-center">
       <div>
         <h2 class="font-space text-2xl font-extrabold tracking-tight text-white">
           Giovanni II Mangco
@@ -26,11 +26,12 @@
         </p>
       </div>
 
-      <div class="flex items-center justify-center gap-2 text-sm text-slate-300">
-        <span class="dot-online"></span>
-        <span>Open to junior developer roles and freelance work</span>
+      <div class="flex flex-col items-center justify-center gap-2 text-center text-sm text-slate-300 sm:flex-row">
+        <span class="dot-online shrink-0"></span>
+        <span class="max-w-[22ch] text-balance sm:max-w-none">
+          Open to junior developer roles and freelance work
+        </span>
       </div>
-      
     </div>
 
     <div class="space-y-3 my-3">
@@ -43,7 +44,7 @@
         Let's work together
       </a>
 
-      <div class="grid grid-cols-2 gap-3">
+      <div class="grid gap-3 sm:grid-cols-2">
         <a href="https://github.com/bellyjoe" target="_blank" rel="noreferrer" class="btn btn-ghost text-xs">
           <AppIcon name="github" class="w-4 h-4" />
           GitHub
@@ -55,17 +56,17 @@
       </div>
     </div>
 
-    <div class="mt-6 pt-6 border-t border-white/10 space-y-3 text-sm">
+    <div class="mt-6 space-y-3 border-t border-white/10 pt-6 text-sm">
       <div
         v-for="item in quickFacts"
         :key="item.label"
-        class="flex items-start justify-between gap-3"
+        class="flex flex-col gap-1.5 text-left sm:flex-row sm:items-start sm:justify-between sm:gap-3"
       >
-        <span class="text-slate-500 flex items-center gap-2">
+        <span class="flex items-center gap-2 text-slate-500">
           <AppIcon :name="item.icon" class="w-4 h-4" />
           {{ item.label }}
         </span>
-        <span class="text-right text-slate-200">{{ item.value }}</span>
+        <span class="text-slate-200 sm:text-right">{{ item.value }}</span>
       </div>
     </div>
 

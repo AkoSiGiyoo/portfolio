@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="card h-full p-6 flex flex-col">
+  <div id="contact" class="card flex h-full flex-col p-5 sm:p-6">
     <p class="section-label">Contact</p>
 
     <div class="space-y-4">
@@ -7,7 +7,7 @@
         <span class="dot-online"></span>
         Open for collaboration
       </div>
-      <h2 class="font-space text-3xl font-extrabold leading-tight text-white">
+      <h2 class="font-space text-2xl font-extrabold leading-tight text-white sm:text-3xl">
         Let&apos;s talk about your next website, system, or support need.
       </h2>
       <p class="max-w-xl text-sm leading-6 text-slate-300">
@@ -16,7 +16,7 @@
     </div>
 
     <div class="mt-6 flex flex-col gap-6 sm:mt-auto sm:pt-6">
-      <div class="flex flex-wrap justify-center gap-4">
+      <div class="flex flex-wrap justify-center gap-3 sm:gap-4">
         <component
           v-for="item in contactMethods"
           :key="item.label"

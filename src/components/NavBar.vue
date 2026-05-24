@@ -3,14 +3,14 @@
     class="sticky top-0 z-50 border-b border-white/8 bg-[rgba(6,12,22,0.72)] backdrop-blur-xl"
     :class="scrolled ? 'shadow-[0_18px_40px_rgba(2,8,23,0.28)]' : ''"
   >
-    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-      <a href="#about" class="flex items-center gap-3" @click.prevent="scrollTo('about')">
-        <div class="w-10 h-10 rounded-2xl bg-[rgba(249,115,22,0.12)] border border-[rgba(249,115,22,0.28)] flex items-center justify-center">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-5">
+      <a href="#about" class="flex min-w-0 items-center gap-3" @click.prevent="scrollTo('about')">
+        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-[rgba(249,115,22,0.28)] bg-[rgba(249,115,22,0.12)]">
           <AppIcon name="code" class="w-5 h-5 text-[#fdba74]" />
         </div>
-        <div class="leading-tight">
-          <div class="text-sm font-semibold text-white">Giovanni II Mangco</div>
-          <div class="text-[11px] text-slate-400 font-mono">portfolio</div>
+        <div class="min-w-0 leading-tight">
+          <div class="truncate text-sm font-semibold text-white sm:text-base">Giovanni II Mangco</div>
+          <div class="font-mono text-[11px] text-slate-400">portfolio</div>
         </div>
       </a>
 
@@ -33,7 +33,7 @@
       </div>
 
       <button
-        class="md:hidden w-10 h-10 rounded-2xl border border-white/10 bg-white/5 flex items-center justify-center text-slate-300"
+        class="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-slate-300 md:hidden"
         @click="menuOpen = !menuOpen"
         aria-label="Toggle menu"
       >
@@ -44,7 +44,7 @@
     <Transition name="mobile-menu">
       <div
         v-if="menuOpen"
-        class="md:hidden max-w-6xl mx-auto px-5 pb-4 flex flex-col gap-2"
+        class="mx-auto flex max-w-6xl flex-col gap-2 px-4 pb-4 sm:px-5 md:hidden"
       >
         <a
           v-for="link in links"

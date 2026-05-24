@@ -421,8 +421,40 @@
 }
 
 @media (max-width: 767px) {
+  .hero-panel {
+    padding: 1.4rem;
+    border-radius: 26px;
+  }
+
   .hero-panel,
   .card {
     border-radius: 24px;
+  }
+
+  .hero-title {
+    max-width: none;
+    font-size: clamp(2.15rem, 12vw, 3rem);
+  }
+
+  .eyebrow {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4;
+    white-space: normal;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .proj-row,
+  .cert-row {
+    flex-direction: column;
+  }
+
+  .proj-row > :first-child,
+  .cert-row > :first-child {
+    align-self: flex-start;
   }
 }

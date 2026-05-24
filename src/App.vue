@@ -6,7 +6,7 @@
 
     <NavBar :active-section="activeSection" />
 
-    <main class="relative z-10 max-w-6xl mx-auto px-5 pt-8 pb-20">
+    <main class="relative z-10 mx-auto max-w-6xl px-4 pt-6 pb-20 sm:px-5 sm:pt-8">
       <TitleSection />
       <section
         class="grid gap-6 lg:grid-cols-[320px_minmax(0,1fr)] lg:items-start"

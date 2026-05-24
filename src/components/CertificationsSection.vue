@@ -43,22 +43,13 @@
           class="relative w-full max-w-5xl overflow-hidden rounded-[28px] border border-white/10 bg-slate-900 shadow-2xl"
           @click.stop
         >
-          <div class="flex items-start justify-between gap-4 border-b border-white/10 px-5 py-4 sm:px-6">
+          <div class="border-b border-white/10 px-5 py-4 sm:px-6">
             <div>
               <h3 class="font-space text-lg font-bold text-white">{{ activeCertificate.title }}</h3>
               <p class="mt-1 text-sm text-slate-400">
                 {{ activeCertificate.issuer }} - {{ activeCertificate.date }}
               </p>
             </div>
-
-            <button
-              type="button"
-              class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-slate-300 transition hover:border-white/20 hover:text-white"
-              @click="closeCertificate"
-            >
-              <span class="sr-only">Close certificate modal</span>
-              <span aria-hidden="true" class="text-lg leading-none">&times;</span>
-            </button>
           </div>
 
           <div class="max-h-[75vh] overflow-auto bg-slate-950/40 p-3 sm:p-4">

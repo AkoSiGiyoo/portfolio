@@ -1,15 +1,15 @@
 <template>
-  <div id="gallery" class="card h-full p-6">
-    <p class="section-label">Gallary</p>
+  <div id="gallery" class="card h-full p-5 sm:p-6">
+    <p class="section-label">Gallery</p>
 
-    <div class="grid grid-cols-2 gap-3">
+    <div class="grid gap-3 sm:grid-cols-2">
       <div
         v-for="item in gallery"
         :key="item.title"
-        class="gallery-cell min-h-[170px] p-4 flex flex-col justify-between"
+        class="gallery-cell flex min-h-[170px] flex-col justify-between p-4"
         :style="{ background: item.gradient }"
       >
-        <span class="text-[11px] font-mono uppercase tracking-[0.18em] text-white/60 flex items-center gap-2">
+        <span class="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-white/60">
           <AppIcon :name="item.icon" class="w-4 h-4" />
           {{ item.kicker }}
         </span>

@@ -13,7 +13,7 @@
         class="proj-row group"
       >
         <div
-          class="w-14 h-14 rounded-[18px] shrink-0 border border-white/10 flex items-center justify-center"
+          class="flex h-14 w-14 shrink-0 items-center justify-center rounded-[18px] border border-white/10"
           :style="{ background: project.bg }"
         >
           <AppIcon :name="project.icon" class="w-6 h-6 text-white" />
@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <div class="hidden sm:flex shrink-0 items-start pt-1 text-slate-500 group-hover:text-white transition-colors">
+        <div class="hidden shrink-0 items-start pt-1 text-slate-500 transition-colors group-hover:text-white sm:flex">
           <AppIcon name="arrowUpRight" class="w-5 h-5" />
         </div>
       </component>

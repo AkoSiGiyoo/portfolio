@@ -8,8 +8,8 @@
         :key="group.label"
         class="rounded-[24px] border border-white/10 bg-[rgba(8,15,28,0.58)] p-5"
       >
-        <div class="flex items-center justify-between gap-3 mb-4">
-          <h3 class="font-space text-lg font-bold text-white flex items-center gap-2">
+        <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <h3 class="flex items-center gap-2 font-space text-lg font-bold text-white">
             <AppIcon :name="group.icon" class="w-5 h-5 text-slate-300" />
             {{ group.label }}
           </h3>
