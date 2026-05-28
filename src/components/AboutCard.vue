@@ -5,20 +5,18 @@
     <div class="grid gap-6 lg:grid-cols-[1.2fr_.8fr]">
       <div class="space-y-4 text-[0.95rem] leading-7 text-slate-300">
         <p>
-          I build software that solves routine operational problems without
-          making the interface harder than the problem itself. Most of my work
-          sits in the overlap between business logic, admin workflows, and UI
-          clarity.
+          I build software that helps people handle daily work faster and more
+          easily. I focus on making each system simple, useful, and easy to
+          understand.
         </p>
         <p>
-          My recent projects include library, clinic, product, and student
-          information systems, usually built with Vue on the frontend and
-          Laravel or PHP on the backend. I care about clean handoff, sensible
-          structure, and shipping features that users can actually trust.
+          My recent projects include systems for clothing rental, clinic management,
+          product inventory, and food ordering. I usually build them with Vue, HTML,
+          CSS, Laravel, and PHP, with clear features that users can trust.
         </p>
         <p>
-          Right now I am looking for opportunities where I can keep improving as
-          an web developer while contributing immediately on real products.
+          I am looking for opportunities where I can grow as a web developer
+          and help build real products from the start.
         </p>
       </div>
 
@@ -41,7 +39,7 @@
 <script setup>
 const facts = [
   { label: 'Education', value: 'BS Information Technology, DNSC' },
-  { label: 'Strengths', value: 'System thinking, Practical UI, Readable Code' },
-  { label: 'Working style', value: 'Independent, Collaborative, Detail-oriented, Time management' },
+  { label: 'Strengths', value: 'Problem-solving, Simple UI, Clean code' },
+  { label: 'Working style', value: 'Independent, Team player, Detail-focused, On time' },
 ]
 </script>

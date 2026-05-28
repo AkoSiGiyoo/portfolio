@@ -42,14 +42,14 @@ import AppIcon from './AppIcon.vue'
 
 const projects = [
   {
-    title: 'Clothing Rental Management System with Desciptive Analytics',
+    title: 'Clothing Rental Management System with Descriptive Analytics',
     url: 'https://github.com/AkoSiGiyoo/Clothing-Rental-Management-System-with-Desciptive-Analytics.git',
     icon: 'shirt',
     bg: 'linear-gradient(135deg, rgba(192,132,252,0.22), rgba(59,7,100,0.2))',
     badgeClass: 'pill-green',
     description:
-      'A school information system that manages enrollment, records, scheduling, and grading while keeping administrative tasks structured and searchable.',
-    tech: ['Laravel', 'Vue.js', 'MySQL', 'Inertia.js'],
+      'A rental operations platform for managing clothing inventory, customer bookings, returns, and payment tracking, paired with descriptive analytics that surface rental trends, item demand, and business performance insights.',
+    tech: ['Laravel', 'Vue.js', 'Tailwind css', 'MySQL', 'Inertia.js'],
   },
   {
     title: 'DNSC RFID Enabled Clinic Record and Management System',

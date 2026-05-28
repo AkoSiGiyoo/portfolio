@@ -22,7 +22,7 @@
           Giovanni II Mangco
         </h2>
         <p class="mt-1 text-sm text-slate-400">
-          Full-Stack Web Developer focused on business systems and clean UI.
+          Full-Stack Web Developer focused on business systems, clean UI, and readable code.
         </p>
       </div>
 
@@ -45,7 +45,7 @@
       </a>
 
       <div class="grid gap-3 sm:grid-cols-2">
-        <a href="https://github.com/bellyjoe" target="_blank" rel="noreferrer" class="btn btn-ghost text-xs">
+        <a href="https://github.com/AkoSiGiyoo" target="_blank" rel="noreferrer" class="btn btn-ghost text-xs">
           <AppIcon name="github" class="w-4 h-4" />
           GitHub
         </a>

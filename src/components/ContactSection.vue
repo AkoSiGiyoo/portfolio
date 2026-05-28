@@ -47,20 +47,20 @@ const contactMethods = [
   {
     label: 'Facebook',
     icon: 'facebook',
-    href: null,
-    external: false,
+    href: 'https://www.facebook.com/gi.yoogi1',
+    external: true,
   },
   {
     label: 'Gmail',
     icon: 'mail',
-    href: null,
+    href: 'mailto:mangcogiovannill@gmail.com',
     external: false,
   },
   {
     label: 'LinkedIn',
     icon: 'linkedin',
-    href: null,
-    external: false,
+    href: 'https://www.linkedin.com/in/giovanni-ll-mangco-b21684399',
+    external: true,
   },
   {
     label: 'Phone',
