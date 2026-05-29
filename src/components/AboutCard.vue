@@ -10,13 +10,14 @@
           understand.
         </p>
         <p>
-          My recent projects include systems for clothing rental, clinic management,
-          product inventory, and food ordering. I usually build them with Vue, HTML,
-          CSS, Laravel, and PHP, with clear features that users can trust.
+          My recent projects include systems for clothing rental, clinic
+          management, product inventory, and food ordering. I usually build them
+          with Vue, HTML, CSS, Laravel, and PHP, with clear features that users
+          can trust.
         </p>
         <p>
-          I am looking for opportunities where I can grow as a web developer
-          and help build real products from the start.
+          I am looking for opportunities where I can grow as a web developer and
+          help build real products from the start.
         </p>
       </div>
 
@@ -26,7 +27,9 @@
           :key="fact.label"
           class="rounded-[22px] border border-white/10 bg-[rgba(8,15,28,0.55)] p-4"
         >
-          <div class="text-[11px] font-mono uppercase tracking-[0.18em] text-slate-500">
+          <div
+            class="text-[11px] font-mono uppercase tracking-[0.18em] text-slate-500"
+          >
             {{ fact.label }}
           </div>
           <div class="mt-2 text-sm text-slate-200">{{ fact.value }}</div>
@@ -38,8 +41,11 @@
 
 <script setup>
 const facts = [
-  { label: 'Education', value: 'BS Information Technology, DNSC' },
-  { label: 'Strengths', value: 'Problem-solving, Simple UI, Clean code' },
-  { label: 'Working style', value: 'Independent, Team player, Detail-focused, On time' },
-]
+  { label: "Education", value: "BS Information Technology, DNSC" },
+  { label: "Strengths", value: "Problem-solving, Simple UI, Clean code" },
+  {
+    label: "Working style",
+    value: "Independent, Team player, Detail-focused, On time",
+  },
+];
 </script>

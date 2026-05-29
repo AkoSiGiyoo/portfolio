@@ -18,15 +18,20 @@
 
     <div class="space-y-3 text-center">
       <div>
-        <h2 class="font-space text-2xl font-extrabold tracking-tight text-white">
+        <h2
+          class="font-space text-2xl font-extrabold tracking-tight text-white"
+        >
           Giovanni II Mangco
         </h2>
         <p class="mt-1 text-sm text-slate-400">
-          Full-Stack Web Developer focused on business systems, clean UI, and readable code.
+          Full-Stack Web Developer focused on business systems, clean UI, and
+          readable code.
         </p>
       </div>
 
-      <div class="flex flex-col items-center justify-center gap-2 text-center text-sm text-slate-300 sm:flex-row">
+      <div
+        class="flex flex-col items-center justify-center gap-2 text-center text-sm text-slate-300 sm:flex-row"
+      >
         <span class="dot-online shrink-0"></span>
         <span class="max-w-[22ch] text-balance sm:max-w-none">
           Open to junior developer roles and freelance work
@@ -45,11 +50,20 @@
       </a>
 
       <div class="grid gap-3 sm:grid-cols-2">
-        <a href="https://github.com/AkoSiGiyoo" target="_blank" rel="noreferrer" class="btn btn-ghost text-xs">
+        <a
+          href="https://github.com/AkoSiGiyoo"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-ghost text-xs"
+        >
           <AppIcon name="github" class="w-4 h-4" />
           GitHub
         </a>
-        <a href="#projects" class="btn btn-outline text-xs" @click.prevent="scrollTo('projects')">
+        <a
+          href="#projects"
+          class="btn btn-outline text-xs"
+          @click.prevent="scrollTo('projects')"
+        >
           <AppIcon name="folder" class="w-4 h-4" />
           Projects
         </a>
@@ -90,22 +104,26 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import AppIcon from './AppIcon.vue'
+import { ref } from "vue";
+import AppIcon from "./AppIcon.vue";
 
-const isModalOpen = ref(false)
+const isModalOpen = ref(false);
 
 const quickFacts = [
-  { label: 'Based in', value: 'Davao City, Philippines', icon: 'location' },
-  { label: 'Primary focus', value: 'Web Development', icon: 'briefcase' },
-  { label: 'Preferred stack', value: 'Vue.js, Laravel, Tailwind css', icon: 'stack' },
-]
+  { label: "Based in", value: "Davao City, Philippines", icon: "location" },
+  { label: "Primary focus", value: "Web Development", icon: "briefcase" },
+  {
+    label: "Preferred stack",
+    value: "Vue.js, Laravel, Tailwind css",
+    icon: "stack",
+  },
+];
 
 const scrollTo = (id) => {
   document
     .getElementById(id)
-    ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-}
+    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 </script>
 
 <style scoped>
