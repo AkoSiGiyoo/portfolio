@@ -4,10 +4,12 @@
       <div class="space-y-5 sm:space-y-6">
         <div class="eyebrow">Web Developer · Davao City, Philippines</div>
         <div class="space-y-4">
-          <h1 class="hero-title">
-            Building calm, useful Web Apps with
-            <span>Vue, Laravel, and practical product thinking.</span>
-          </h1>
+          <h2 class="hero-title">
+            Turning your ideas into 
+            <span
+              >Reliable, High-performance Web Applications.</span
+            >
+          </h2>
         </div>
       </div>
 

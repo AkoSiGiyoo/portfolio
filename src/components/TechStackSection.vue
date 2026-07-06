@@ -71,7 +71,7 @@ const techGroups = [
     icon: "stack",
     items: [
       { name: "MySQL", dot: "bg-cyan-300", variant: "pill-blue" },
-      { name: "MongoDB", dot: "bg-green-300", variant: "pill-green" },
+      { name: "PostgreSQL", dot: "bg-green-300", variant: "pill-green" },
     ],
   },
   {
